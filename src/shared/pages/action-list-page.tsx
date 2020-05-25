@@ -100,7 +100,7 @@ const getActionListColumns = (): Array<ColumnProps<ActionInfo>> => [
   {
     title: t("action.type"),
     dataIndex: "name",
-    width: "3vw",
+    width: "8vw",
     render: (_: string, record: ActionInfo, __: number): JSX.Element => {
       return <Tag>{getActionType(record)}</Tag>;
     },
@@ -274,7 +274,7 @@ const getActionByTypeColumns = (): Array<ColumnProps<IActionByTypeInfo>> => [
   {
     title: t("action.type"),
     dataIndex: "actType",
-    width: "5vw",
+    width: "8vw",
     render: (text): JSX.Element => {
       return <Tag>{text}</Tag>;
     },
